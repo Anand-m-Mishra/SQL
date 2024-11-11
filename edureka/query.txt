@@ -1,0 +1,10 @@
+second highest salary?
+
+2 ways :
+using limit and subquery:
+select sal 
+from (select sal from employee order by desc limit 2) as table2
+order by table2.sal 
+asc limit 1
+
+explanation: the subquery finds the salary in desc order for 2 employee , so we got the 1st highest and 2nd highest as well.then we 'reverse the table and pick the 1st one.this can be used for any placed salary. 
