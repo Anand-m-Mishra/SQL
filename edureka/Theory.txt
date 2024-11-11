@@ -1,0 +1,12 @@
+Difference between delete and truncate command?
+delete:
+is slower
+deletes a row from the table 
+belongs to DML commands
+can be rolledback
+
+truncate:
+is faster.
+deletes all the row from the table.
+is type of data defination language command
+can't be rolledback
